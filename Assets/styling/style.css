@@ -1,0 +1,53 @@
+/* *{
+    background-color: #000000;
+} */
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.border-gradient {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, red, blue) 1;
+}
+
+
+/* Button Gradient Code Start */
+.btn-gradient {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(to right, #e60000, #4b0082); /* red to indigo */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+/* Button Gradient Code End */
+
+
+/* Custom Boldness for Layout 2 */
+.custom-bold {
+  font-weight: 900;
+}
+
+
+/* Footer Section Start */
+.footer a:hover {
+    color: red; /* Bootstrap primary */
+    text-decoration: underline;
+}
+.footer-gradient {
+  height: 4px;
+  background: linear-gradient(to right, red, blue);
+}
+/* Footer Section End */
+
