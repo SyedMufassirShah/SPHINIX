@@ -1,16 +1,42 @@
 /* *{
     background-color: #000000;
 } */
+:root {
+  --main_heading: 3.5rem;
+  --sub_heading: 2rem;
+  --section_padding: 1rem 2rem;
+  --phone_screen_pad:1rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+.fs-3_5rem{
+  font-size: 3.5rem;
+}
+
 body {
-    margin: 0;
-    background-color: #000;
+  margin: 0;
+  background-color: #000;
+  font-family: 'Kanit', sans-serif;
+  padding: 0;
 }
 
+/* For Bottom Border */
 .border-gradient {
-    border-bottom: 4px solid;
-    border-image: linear-gradient(to right, red, blue) 1;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, red, blue) 1;
+}
+/* For Top Border */
+.border-gradient-top {
+  border-top: 4px solid;
+  border-image: linear-gradient(to right, red, blue) 1;
 }
 
+
+section {
+  padding: var(--section_padding);
+}
 
 /* Button Gradient Code Start */
 .btn-gradient {
@@ -23,7 +49,8 @@ body {
   color: white;
   font-weight: 600;
   text-decoration: none;
-  background: linear-gradient(to right, #e60000, #4b0082); /* red to indigo */
+  background: linear-gradient(to right, #e60000, #4b0082);
+  /* red to indigo */
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -31,6 +58,7 @@ body {
   transform: translateY(-2px);
   opacity: 0.95;
 }
+
 /* Button Gradient Code End */
 
 
@@ -42,12 +70,23 @@ body {
 
 /* Footer Section Start */
 .footer a:hover {
-    color: red; /* Bootstrap primary */
-    text-decoration: underline;
+  color: red;
+  /* Bootstrap primary */
+  text-decoration: underline;
 }
+
 .footer-gradient {
   height: 4px;
   background: linear-gradient(to right, red, blue);
 }
+
 /* Footer Section End */
 
+.secure_heading {
+  font-size: var(--sub_heading);
+}
+@media only screen and (max-width: 768px) {
+  section{
+    padding: var(--phone_screen_pad);
+  }
+}
