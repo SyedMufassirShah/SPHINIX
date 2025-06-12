@@ -15,6 +15,25 @@
   font-size: 3.5rem;
 }
 
+.p-block-7{
+  padding-block: 122px;
+}
+.p-inline-4{
+  padding-inline: 64px;
+}
+.gap-80{
+  gap: 80px;
+}
+
+.custom-container {
+    width: 1440px;
+    height: 464px;
+    gap: 80px;
+    border-top: 1px solid #fff; /* Adjust color as needed */
+    padding: 112px 64px;
+    margin: 0 auto; /* Centers the container */
+  }
+
 body {
   margin: 0;
   background-color: #000;
